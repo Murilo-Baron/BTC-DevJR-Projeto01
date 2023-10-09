@@ -44,26 +44,14 @@ input {
     max-width: 700px;
     border-radius: 15px; /* Bordas arredondadas */
 }
-/*container[id^="Card"] {
-    display: inline-block; 
-    vertical-align: top;
-    padding: 40px; 
-    cursor: pointer;
-    margin-right: 10px;
-    background: linear-gradient(to bottom, #4A79F2, #ffffff); 
-    border: 2px solid #2C1031; 
-    border-radius: 10px;
-    text-align: center;
-}
-
-
-container[id^="Card"]:hover {
-    background-color: #c0c0c0;
-} */
 
 #Card {
     background: linear-gradient(to bottom, #4A79F2, #ffffff);
     display: inline-block;  
+    vertical-align: top;
+    cursor: pointer;
+    margin-right: 2,5px;
+    text-align: center;
     border-radius: 15px;
     padding: 20px;
     margin-bottom: 20px;
@@ -76,23 +64,21 @@ container[id^="Card"]:hover {
 
 
 /* Estilo para o botão de votar */
-#voteButton {
+#Card button {
+    margin-top: 10px; /* Adiciona espaço acima do botão */
     padding: 10px;
     background-color: #1D0C20;
-    align-items: center; /* Cor verde, pode ajustar conforme necessário */
     color: #fff;
     border: none;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 8px;
 }
 
-/* Estilo para o botão quando o cursor passa sobre ele */
-#voteButton:hover {
-    background-color: #1D0C20;
-}
-
+/* Estilo para o SVG dentro do cartão */
 #Card svg {
     width: 100px; /* Defina o tamanho desejado */
     height: 100px; /* Defina o tamanho desejado */
     margin-bottom: 10px; /* Adiciona espaço entre a imagem e o texto */
+    margin: 0 auto; /* Centraliza o SVG horizontalmente */
 }
