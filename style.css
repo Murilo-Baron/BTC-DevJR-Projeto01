@@ -30,7 +30,7 @@ input {
 
 /* Estilo específico para a seção principal */
 #main {
-    max-width: 600px; /* Defina a largura máxima do container main */
+    max-width: 700px; /* Defina a largura máxima do container main */
     margin: 0 auto; /* Centralize o container main na tela */
     background: linear-gradient(to bottom, #2C1031, #531A5D); /* Gradiente de azul para branco */
     padding: 20px;
@@ -40,31 +40,46 @@ input {
 /* Estilo específico para a seção de entrada */
 #input {
     background: linear-gradient(to bottom, #531A5D, #2C1031);
-    padding: 20px;
-    max-width: 600px;
+    padding: 40px;
+    max-width: 700px;
     border-radius: 15px; /* Bordas arredondadas */
 }
-container[id^="Card"] {
-    display: inline-block; /* Exibe os cartões lado a lado */
-    vertical-align: top; /* Alinha os cartões ao topo */
-    padding: 20px; /* Ajuste do padding */
+/*container[id^="Card"] {
+    display: inline-block; 
+    vertical-align: top;
+    padding: 40px; 
     cursor: pointer;
-    margin-right: 10px; /* Adiciona um espaço entre os cartões */
-    background: linear-gradient(to bottom, #4A79F2, #ffffff); /* Gradiente de azul para branco */
-    border: 2px solid #2C1031; /* Adição da borda azul */
-    border-radius: 10px; /* Bordas arredondadas */
-    text-align: center; /* Centraliza o conteúdo dentro do container Card */
+    margin-right: 10px;
+    background: linear-gradient(to bottom, #4A79F2, #ffffff); 
+    border: 2px solid #2C1031; 
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+container[id^="Card"]:hover {
+    background-color: #c0c0c0;
+} */
+
+#Card {
+    background: linear-gradient(to bottom, #4A79F2, #ffffff);
+    display: inline-block;  
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 /* Estilo quando o cursor passa sobre os cartões */
-container[id^="Card"]:hover {
-    background-color: #c0c0c0;
+#Card:hover {
+    background-color: #260F2E;
 }
+
 
 /* Estilo para o botão de votar */
 #voteButton {
     padding: 10px;
-    background-color: #1D0C20; /* Cor verde, pode ajustar conforme necessário */
+    background-color: #1D0C20;
+    align-items: center; /* Cor verde, pode ajustar conforme necessário */
     color: #fff;
     border: none;
     cursor: pointer;
@@ -76,7 +91,7 @@ container[id^="Card"]:hover {
     background-color: #1D0C20;
 }
 
-container[id^="Card"] svg {
+#Card svg {
     width: 100px; /* Defina o tamanho desejado */
     height: 100px; /* Defina o tamanho desejado */
     margin-bottom: 10px; /* Adiciona espaço entre a imagem e o texto */
