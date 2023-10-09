@@ -25,6 +25,7 @@ h2, h3 {
 input {
     width: 100%;
     margin-bottom: 10px;
+    border-radius: 8px; /* Bordas arredondadas */
 }
 
 /* Estilo específico para a seção principal */
@@ -33,21 +34,26 @@ input {
     margin: 0 auto; /* Centralize o container main na tela */
     background: linear-gradient(to bottom, #2C1031, #531A5D); /* Gradiente de azul para branco */
     padding: 20px;
+    border-radius: 15px; /* Bordas arredondadas */
 }
 
 /* Estilo específico para a seção de entrada */
 #input {
     background: linear-gradient(to bottom, #531A5D, #2C1031);
     padding: 20px;
+    max-width: 600px;
+    border-radius: 15px; /* Bordas arredondadas */
 }
-
 container[id^="Card"] {
     display: inline-block; /* Exibe os cartões lado a lado */
     vertical-align: top; /* Alinha os cartões ao topo */
-    padding: 10px;
+    padding: 20px; /* Ajuste do padding */
     cursor: pointer;
     margin-right: 10px; /* Adiciona um espaço entre os cartões */
     background: linear-gradient(to bottom, #4A79F2, #ffffff); /* Gradiente de azul para branco */
+    border: 2px solid #2C1031; /* Adição da borda azul */
+    border-radius: 10px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o conteúdo dentro do container Card */
 }
 
 /* Estilo quando o cursor passa sobre os cartões */
@@ -68,4 +74,10 @@ container[id^="Card"]:hover {
 /* Estilo para o botão quando o cursor passa sobre ele */
 #voteButton:hover {
     background-color: #1D0C20;
+}
+
+container[id^="Card"] svg {
+    width: 100px; /* Defina o tamanho desejado */
+    height: 100px; /* Defina o tamanho desejado */
+    margin-bottom: 10px; /* Adiciona espaço entre a imagem e o texto */
 }
