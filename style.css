@@ -9,11 +9,11 @@ container {
     margin-bottom: 20px;
 }
 
-h1[id^="tittle"]{
+h1[id^="tittle"] {
     color: #FECD23;
 }
 
-h1{
+h1 {
     color: #ffff;
 }
 
@@ -29,13 +29,15 @@ input {
 
 /* Estilo específico para a seção principal */
 #main {
-    background-color: #2C1031;
+    max-width: 600px; /* Defina a largura máxima do container main */
+    margin: 0 auto; /* Centralize o container main na tela */
+    background: linear-gradient(to bottom, #2C1031, #531A5D); /* Gradiente de azul para branco */
     padding: 20px;
 }
 
 /* Estilo específico para a seção de entrada */
 #input {
-    background-color:#551B5F;
+    background: linear-gradient(to bottom, #531A5D, #2C1031);
     padding: 20px;
 }
 
