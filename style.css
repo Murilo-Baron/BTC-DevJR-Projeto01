@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center; /* Centraliza todo o conteúdo */
+}
+
+container {
+    display: block;
+    margin-bottom: 20px;
+}
+
+h1[id^="tittle"]{
+    color: #FECD23;
+}
+
+h1{
+    color: #ffff;
+}
+
+h2, h3 {
+    margin-bottom: 10px;
+    color: #ffff;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Estilo específico para a seção principal */
+#main {
+    background-color: #2C1031;
+    padding: 20px;
+}
+
+/* Estilo específico para a seção de entrada */
+#input {
+    background-color:#551B5F;
+    padding: 20px;
+}
+
+container[id^="Card"] {
+    display: inline-block; /* Exibe os cartões lado a lado */
+    vertical-align: top; /* Alinha os cartões ao topo */
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 10px; /* Adiciona um espaço entre os cartões */
+    background: linear-gradient(to bottom, #4A79F2, #ffffff); /* Gradiente de azul para branco */
+}
+
+/* Estilo quando o cursor passa sobre os cartões */
+container[id^="Card"]:hover {
+    background-color: #c0c0c0;
+}
+
+/* Estilo para o botão de votar */
+#voteButton {
+    padding: 10px;
+    background-color: #1D0C20; /* Cor verde, pode ajustar conforme necessário */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Estilo para o botão quando o cursor passa sobre ele */
+#voteButton:hover {
+    background-color: #1D0C20;
+}
